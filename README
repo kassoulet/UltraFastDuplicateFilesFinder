@@ -20,3 +20,34 @@ But this way is quite useful to detect duplicates within corrupted media files..
 
 
 this is public domain.
+
+
+
+------------------------------------------------------------------------------
+example run, took less than a second to answer...
+
+
+gautier@quad:~/code/tmp$ find /home -size +10M | ./duplicate.py
+      size   filename
+  12467906   /home/gautier/Photos/pict4614.mov
+  12467906   /home/gautier/Photos/Videos/PICT4614.MOV
+
+  13068570   /home/gautier/Photos/pict4588.mov
+  13068570   /home/gautier/Photos/Videos/PICT4588.MOV
+
+[...]
+
+  20865498   /home/gautier/Photos/pict4695.mov
+  20865498   /home/gautier/Photos/Videos/PICT4695.MOV
+
+  28270824   /home/gautier/tmp/tsunami 1 œ ǒǑ.flac
+  28270824   /home/gautier/tmp/tsunami-1.flac
+
+136 files checked (22.75 GiB), 8 duplicates (153.45 MiB).
+
+
+
+
+
+
+
