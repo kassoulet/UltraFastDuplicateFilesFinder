@@ -1,0 +1,22 @@
+Ultra Fast Duplicate Files Finder
+=================================
+  by Gautier Portet <kassoulet gmail com>
+
+
+Takes a list of file from stdin.
+And print the duplicate ones.
+
+
+example use:
+
+  find ~/ -size +10M | ./UltraFastDuplicateFilesFinder.py
+
+to find duplicates in your home folder, all files more than 10MB.
+
+UltraFastDuplicateFilesFinder compares only the very beginning of the files.
+Its sufficient for most uses, but use with caution.
+
+But this way is quite useful to detect duplicates within corrupted media files...
+
+
+this is public domain.
